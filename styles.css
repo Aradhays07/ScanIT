@@ -841,6 +841,47 @@ div[data-testid="stHeadingWithActionElements"] {
 }
 
 /* ========================
+   CAMERA UI FIXES
+   ======================== */
+
+.camera-container {
+    background: var(--bg-card) !important;
+    border: 2px solid var(--border-light) !important;
+    border-radius: var(--radius-lg) !important;
+    padding: var(--space-xl) !important;
+    margin: var(--space-lg) 10 !important;
+    box-shadow: var(--shadow-md) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+}
+
+/* Camera input specific styling */
+.stCameraInput > div {
+    background: var(--bg-primary) !important;
+    border: 1px solid var(--border-medium) !important;
+    border-radius: var(--radius-lg) !important;
+    padding: none !important;
+    box-shadow: var(--shadow-sm) !important;
+}
+
+.stCameraInput button {
+    background: var(--primary-gradient) !important;
+    color: var(--text-white) !important;
+    border: none !important;
+    border-radius: var(--radius-md) !important;
+    padding: var(--space-lg) var(--space-xl) !important;
+    font-weight: 600 !important;
+    box-shadow: var(--shadow-sm) !important;
+    transition: var(--transition) !important;
+}
+
+.stCameraInput button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: var(--shadow-md) !important;
+    background: var(--secondary-gradient) !important;
+}
+
+/* ========================
    CUSTOM SCROLLBAR
    ======================== */
 
