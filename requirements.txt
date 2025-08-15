@@ -2,8 +2,13 @@ streamlit
 ultralytics
 opencv-python-headless
 Pillow
-plotly
 matplotlib
 pandas
+plotly
+requests
+numpy
 google-generativeai
+geopy
+folium
+streamlit-folium
 
