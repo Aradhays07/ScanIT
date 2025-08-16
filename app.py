@@ -648,7 +648,7 @@ def main():
     # Enhanced Header
     st.markdown("""
     <div class="hero-header fade-in-up">
-        <h1 class="hero-title">🌱 EcoWaste AI</h1>
+        <h1 class="hero-title">🌱 SahiBin</h1>
         <p class="hero-subtitle">
             AI-Powered Smart Waste Classification & Sustainable Disposal Assistant<br>
             <em>Making Sustainability Simple, One Detection at a Time</em>
