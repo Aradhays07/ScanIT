@@ -38,7 +38,7 @@ import logging
 # PAGE CONFIG & LOGGING
 # ========================
 st.set_page_config(
-    page_title="🌱 EcoWaste AI - Smart Garbage Detection", 
+    page_title="🌱 SahiBin - Smart Garbage Detection", 
     layout="wide",
     initial_sidebar_state="expanded",
     page_icon="♻️"
@@ -913,7 +913,7 @@ def main():
             st.image(
                 cv2.cvtColor(preview_image, cv2.COLOR_BGR2RGB), 
                 caption="Image Preview",
-                use_column_width=True
+                use_container_width=True
             )
     
     # ========================
@@ -973,7 +973,7 @@ def main():
                             st.image(
                                 cv2.cvtColor(annotated_img, cv2.COLOR_BGR2RGB), 
                                 caption=f"🎯 Detected {len(detections_data)} items in {processing_time:.2f}s", 
-                                use_column_width=True
+                                use_container_width=True
                             )
                         
                         with result_col2:
@@ -1041,7 +1041,7 @@ def main():
                             st.image(
                                 cv2.cvtColor(annotated_frame, cv2.COLOR_BGR2RGB), 
                                 caption=f"🎯 Video Frame Analysis - {len(detections_data)} items detected", 
-                                use_column_width=True
+                                use_container_width=True
                             )
                         with col2:
                             recyclable_count = sum(1 for item in detections_data if item["Recyclable"] == "Yes")
@@ -1437,7 +1437,7 @@ def main():
         st.markdown("### 🎯 Getting Started")
         st.markdown("""
         <div class="glass-card">
-            <h3>🌟 Welcome to EcoWaste AI!</h3>
+            <h3>🌟 Welcome to SahiBin!</h3>
             <p>Follow these steps to start detecting and properly disposing of waste:</p>
             <ol style="text-align: left; padding-left: 2rem; line-height: 2;">
                 <li><strong>📸 Capture or Upload:</strong> Use your camera or upload an image of waste items</li>
@@ -1457,7 +1457,7 @@ def main():
     st.markdown("""
     <div class="footer">
         <div class="footer-content">
-            <h3 class="footer-title">🌱 EcoWaste AI - Revolutionizing Waste Management</h3>
+            <h3 class="footer-title">🌱 SahiBin - Revolutionizing Waste Management</h3>
             <p class="footer-text">
                 Empowering individuals and communities worldwide to make informed decisions about waste disposal,
                 promoting sustainability, and creating a cleaner future through the power of artificial intelligence
